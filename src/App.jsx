@@ -4,7 +4,7 @@ import AnimatedCards from "./components/AnimatedCards";
 
 const App = () => {
   return (
-    <div className="">
+    <div className="min-h-screen bg-gradient-to-r from-primary to-primary/70">
       <AnimatedCards />
     </div>
   );
