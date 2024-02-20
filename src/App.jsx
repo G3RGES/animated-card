@@ -4,7 +4,7 @@ import AnimatedCards from "./components/AnimatedCards";
 
 const App = () => {
   return (
-    <div>
+    <div className="">
       <AnimatedCards />
     </div>
   );
