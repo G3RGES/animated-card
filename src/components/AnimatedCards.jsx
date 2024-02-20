@@ -33,7 +33,12 @@ const CardsData = [
 const AnimatedCards = () => {
   return (
     <div className="container mx-auto ">
-      <h1 className="">Responsive Animated Cards</h1>
+      <h1 className="text-center text-white font-bold text-3xl mb-14 mt-5 sm:mt-0">
+        Responsive Animated Cards
+      </h1>
+
+      {/* cards section */}
+      <div className=""></div>
     </div>
   );
 };
