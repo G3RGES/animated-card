@@ -42,7 +42,31 @@ const AnimatedCards = () => {
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center
       gap-6"
       >
-        {}
+        {CardsData.map(({ id, img, desc, title }) => (
+          <div
+            className="text-white shadow-md rounded-md overflow-hidden relative group"
+            key={id}
+          >
+            <img
+              className="w-full max-w-[300px] h-[350px] rounded-xl "
+              src={img}
+              alt={title}
+            />
+            {/* overlay section */}
+            <div
+              className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100
+            group-hover:top-0 duration-500 p-4 w-full h-full bg-black/60 
+            group-hover:backdrop-blur-sm
+            "
+            >
+              <div className="">
+                <Slide>
+                  <h1 className=" ">{title}</h1>
+                </Slide>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
