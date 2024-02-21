@@ -59,9 +59,20 @@ const AnimatedCards = () => {
             group-hover:backdrop-blur-sm
             "
             >
-              <div className="">
-                <Slide>
-                  <h1 className=" ">{title}</h1>
+              <div className="space-y-4">
+                <Slide cascade>
+                  <h1 className="text-3xl font-bold ">{title}</h1>
+                  <Fade cascade damping={0.05}>
+                    {desc}
+                  </Fade>
+                  <div>
+                    <button
+                      className="border border-white px-4 py-1 rounded-md 
+                    hover:bg-black/60 duration-300 "
+                    >
+                      View
+                    </button>
+                  </div>
                 </Slide>
               </div>
             </div>
